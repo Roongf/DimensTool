@@ -5,14 +5,14 @@ This is a SmallWidth dimens.xml creator
 
 # 使用说明
 
-1. 引入插件
+1. 引入插件  
     dependencies {
         classpath 'com.rf.gradle.plugin.dimenstool:RFDimensToolsPlugin:1.0'
     }
-2. 应用插件
+2. 应用插件  
     apply plugin: 'com.rf.gradle.plugin.dimenstool'
     
-3. 定义配置文件目录
+3. 定义配置文件目录  
     defineDimensPath {
         configFilePath '/{Your Project}/app/'
     }
@@ -24,3 +24,4 @@ This is a SmallWidth dimens.xml creator
 
 # 截图示例
    
+![image](https://github.com/Roongf/DimensTool/blob/master/QQ20210202-162747.png)
