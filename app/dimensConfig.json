@@ -1,0 +1,35 @@
+{
+ "configFilePath": "/Users/lee/Desktop/ownwork/DimensTool/app/",
+ "swDpValues": [
+  320,
+  360,
+  410,
+  450,
+  500,
+  540,
+  600,
+  720,
+  768,
+  800
+ ],
+ "swScreenSizeStandard": 1080,
+ "swDpStandard": 360,
+ "swSizeValues": [
+  {
+   "width": 720,
+   "height": 1280
+  },
+  {
+   "width": 1080,
+   "height": 1920
+  },
+  {
+   "width": 1440,
+   "height": 2560
+  },
+  {
+   "width": 1536,
+   "height": 2048
+  }
+ ]
+}

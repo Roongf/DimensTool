@@ -1,0 +1,44 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+def group = "com.rf.gradle.plugin.dimenstool"
+def version = "1.0"
+def artifactId = "RFDimensToolsPlugin"
+
+
+dependencies {
+    //导入Gradle的api，要写插件，肯定要使用Gradle的api
+    implementation 'com.android.tools.build:gradle:4.1.1'
+    implementation gradleApi() // 必须
+    implementation localGroovy() // 必须
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = group
+            pom.artifactId = artifactId
+            pom.version = version
+
+            // 指定本地maven的路劲，在项目根目录下
+            repository(url: uri('../repos'))
+        }
+    }
+}
+
+sourceSets {
+    main.groovy {
+        srcDirs = ['src/main/groovy']
+    }
+    main.java {
+        srcDirs = ['src/main/java']
+    }
+}
