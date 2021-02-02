@@ -1,7 +1,7 @@
 # DimensTool
 This is a SmallWidth dimens.xml creator
 
-•一个简单的Android屏幕适配方案(SmallWidth)
+•一个简单的Android屏幕适配方案(SmallWidth), (学习使用，如有问题，可随时联系，欢迎Star, 😍😍😍😍😍😍)
 
 # 使用说明
 
